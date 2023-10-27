@@ -1,0 +1,148 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+    font-family: 'Red Hat Display', sans-serif;
+
+}
+
+/* container */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 375px;
+    background-color: white;
+    margin-inline: auto;
+    border-radius: 20px;
+    align-items: center;
+    margin-block: 3rem;
+    box-shadow: 1px 5px 1px  hsl(228, 63%, 81%);
+    
+}
+
+/* header */
+
+header img{
+    max-width: 100%;
+   margin-inline: 0;
+   border-radius: 20px 20px 0 0;
+}
+
+/* main */
+
+h1{
+    color: hsl(223, 47%, 23%);
+    font-weight: 900;
+}
+
+main{
+    padding: 1rem;
+    padding-bottom: 40px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+p{
+    line-height: 1.5;
+    color: hsl(224, 23%, 55%);
+    font-weight: 500;
+}
+
+.annual-plan {
+    background-color:  hsl(225, 100%, 98%);
+    border-radius: 20px;
+    border-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    align-items: center;
+    margin-top: 20px;
+    gap: 1rem;
+}
+
+section-3 a {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+}
+section-3 a:hover {
+    text-decoration: none;
+}
+
+.bold{
+    font-weight: 700;
+    color: hsl(223, 47%, 23%);
+}
+
+
+section-3 {
+    margin-left: auto;
+}
+
+/* buttons */
+
+button:hover{
+    cursor: pointer;
+}
+.proceed {
+    background-color: hsl(245, 75%, 52%);
+    border-radius: 20px;
+    border-color: transparent;
+    width: 100%;
+    color: hsl(225, 100%, 98%);
+    padding-block: 15px;
+    margin-block: 20px;
+    box-shadow: 0 10px 0 hsl(229, 69%, 94%);
+
+}
+
+ .cancel-order {
+    font-weight: 700;
+    color:  hsl(224, 23%, 55%);
+    font-size: 500;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+
+
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (min-width: 800px){
+        body{
+            background-image: url(images/pattern-background-desktop.svg);
+            background-position: top;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            width: 1440px;
+    
+        }
+    
+        .container{
+            min-width: 500px;
+
+        }
+
+        main {
+            width: 90%;
+        }
+
+        header img{
+            width: 500px;
+        }
+    
+    }
+    
